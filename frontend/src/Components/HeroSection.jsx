@@ -24,7 +24,7 @@ const HeroSection = () => {
                 {/* Small Intro Row */}
                 <div className="flex flex-col lg:flex-row items-center lg:items-center mt-30 lg:mt-0 mb-4">
                     <p className="text-xs sm:text-sm md:text-xl lg:text-2xl font-light text-gray-300 uppercase tracking-widest mb-2 lg:mb-0 lg:mr-4">
-                        I AM PRIYANSHU SINGH
+                        I AM PRIYANSHU 
                     </p>
                     <div className="hidden lg:block h-px w-20 bg-gray-400"></div>
                 </div>

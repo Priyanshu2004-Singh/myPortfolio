@@ -19,7 +19,7 @@ const Services = () => {
         ];
 
     return (
-        <section aria-labelledby="services-heading" style={{ backgroundColor: "rgb(32, 32, 32)" }} className="text-white py-14 sm:py-16 px-4 md:px-16 lg:px-32 animate-fade-in">
+        <section id="services" aria-labelledby="services-heading" style={{ backgroundColor: "rgb(32, 32, 32)" }} className="text-white py-14 sm:py-16 px-4 md:px-16 lg:px-32 animate-fade-in">
             <div className="text-center mb-10 sm:mb-12">
                 <p className="text-gray-400 text-xs sm:text-sm uppercase tracking-widest">What I Do</p>
                 <h2 id="services-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2">MY SERVICES</h2>

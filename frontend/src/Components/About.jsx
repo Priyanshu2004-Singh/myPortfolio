@@ -17,7 +17,7 @@ const About = () => {
   ];
 
   return (
-    <section aria-labelledby="about-heading" className="bg-[#111] text-white py-14 sm:py-16 px-4 md:px-16 lg:px-32 animate-fade-in">
+  <section id="about" aria-labelledby="about-heading" className="bg-[#111] text-white py-14 sm:py-16 px-4 md:px-16 lg:px-32 animate-fade-in">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         {/* Left: Text */}
         <div className="flex-1 max-w-2xl text-center lg:text-left animate-fade-in delay-200">

@@ -3,6 +3,7 @@ import React from 'react';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { SiExpress, SiMongodb, SiTailwindcss, SiTypescript, SiFramer } from 'react-icons/si';
 import about from "../assets/about.avif";
+import OptimizedImage from './OptimizedImage';
 
 const About = () => {
   const skills = [
@@ -65,11 +66,9 @@ const About = () => {
           <div className="absolute -top-6 -left-6 w-56 h-56 sm:w-72 sm:h-72 rounded-full bg-cyan-500/20 blur-3xl -z-10" />
           <picture>
             <source srcSet={about} type="image/avif" />
-            <img
+            <OptimizedImage
               src={about}
               alt="Portrait"
-              loading="lazy"
-              decoding="async"
               className="w-56 sm:w-72 md:w-96 lg:w-[22rem] xl:w-[26rem] h-auto rounded-xl border border-white/10 p-3 bg-white/5"
             />
           </picture>

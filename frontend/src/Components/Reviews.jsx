@@ -44,6 +44,10 @@ const Reviews = () => {
               <img
                 src={review.image}
                 alt={review.name}
+                loading="lazy"
+                decoding="async"
+                width="64"
+                height="64"
                 className="w-16 h-16 rounded-full object-cover mb-4"
               />
               <h3 className="text-lg font-bold">

@@ -58,6 +58,9 @@ const Projects = () => {
                   alt={project.title}
                   loading="lazy"
                   decoding="async"
+                  width="800"
+                  height="600"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                   className="w-full h-full object-cover card-img"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-70 group-hover:opacity-90 transition-opacity duration-300" />

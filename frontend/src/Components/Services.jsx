@@ -6,6 +6,7 @@ import ai from "../assets/ai.jpg"
 import webdesing from "../assets/webdesign.jpg"
 import development from "../assets/development.jpg"
 import support from "../assets/support.jpg"
+import OptimizedImage from './OptimizedImage'
 
 const Services = () => {
         const items = [
@@ -28,10 +29,15 @@ const Services = () => {
                                 {items.map(({ title, desc, img, iconEl, url }) => (
                     <article key={title} className="relative group overflow-hidden rounded-xl border border-white/10 glass animate-fade-in delay-200">
                         {/* Image background */}
-                        <div className="absolute inset-0">
-                            <img src={img} alt={title} loading="lazy" decoding="async" className="w-full h-full object-cover card-img" />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-                        </div>
+                                                <div className="absolute inset-0">
+                                                        <OptimizedImage
+                                                            src={img}
+                                                            alt={title}
+                                                            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                                                            className="w-full h-full object-cover card-img"
+                                                        />
+                                                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                                                </div>
 
                         {/* Content */}
                         <div className="relative z-10 flex flex-col justify-end h-full aspect-[4/3] sm:aspect-square p-4 sm:p-5">

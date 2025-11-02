@@ -1,6 +1,7 @@
 // src/components/HeroSection.jsx
 import React from 'react';
 import heroImage from "../assets/hero.png"; // Local hero image
+import OptimizedImage from './OptimizedImage';
 
 const HeroSection = () => {
     return (
@@ -11,6 +12,8 @@ const HeroSection = () => {
                     src="https://media.istockphoto.com/id/916306960/photo/faceless-man-in-hoodie-standing-isolated-on-black.jpg?s=612x612&w=0&k=20&c=pMeGd1UuJgvdZ2gV2VQC2Jn3VwMNeW6TF3cG9RIo1tY="
                     alt="Hero Background"
                     loading="lazy"
+                    decoding="async"
+                    fetchpriority="low"
                     className="w-full h-full object-cover opacity-60 pointer-events-none select-none"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
@@ -41,11 +44,12 @@ const HeroSection = () => {
 
             {/* Hero Image (Right Side on large screens) */}
         <div className="relative z-10 flex-1 justify-center md:justify-end mt-6 lg:mt-0 hidden md:flex">
-                <img
+                <OptimizedImage
                     src={heroImage}
                     alt="Priyanshu Singh"
-            loading="lazy"
-            className="w-40 sm:w-64 md:w-96 lg:w-[32rem] xl:w-[36rem] max-h-[60vh] md:max-h-[90vh] object-contain animate-float" />
+                    priority
+                    className="w-40 sm:w-64 md:w-96 lg:w-[32rem] xl:w-[36rem] max-h-[60vh] md:max-h-[90vh] object-contain animate-float"
+                />
             </div>
         </div>
     );
